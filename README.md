@@ -1,4 +1,4 @@
-# Creating a sql Database and running queries to analyse data and create reports
+# Creating a SQL database and executing queries to analyze data and generate reports.
 
 Using MySQL, I created three databases for an e-commerce company that stores inventory data, invoicing data, as well as customer and orders data, along with employee information: sql_hr, sql_inventory, sql_invoicing, and sql_store.
 
