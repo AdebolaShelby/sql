@@ -11,9 +11,8 @@ After creating the database, I was able to query the data to analyze it and crea
 * Create a report that aggregates total sales and total payments for the first half of the year and the second half of the year
 
     ## Query
-    ![input of aggregate functions using union](<Screenshot 2024-12-15 183822.png>)
-
+    ![input of aggregate functions using union](<Screenshot 2024-12-15 185948.png>)
     ## Output
-    ![output of aggregate functions using union](<Screenshot 2024-12-15 184025.png>)
+    ![output of aggregate functions using union](<Screenshot 2024-12-15 185959.png>)
 
 
