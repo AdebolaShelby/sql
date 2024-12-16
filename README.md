@@ -11,22 +11,6 @@ After creating the database, I was able to query the data to analyze it and crea
 Create a report that aggregates total sales and total payments for the first half of the year and the second half of the year
 * Query
 ![input of aggregate functions using union](<Screenshot 2024-12-15 183822.png>)
-    USE sql_invoicing;
-    SELECT 
-        'first_half' as date_range,
-        sum(invoice_total) AS total_sales,
-        sum(payment_total) AS total_payments,
-        sum(invoice_total - payment_total) AS what_we_expect
-    FROM invoices
-    WHERE invoice_date < '2019-07-01'
-    union
-    SELECT 
-        'second half' AS date_range,
-        sum(invoice_total) AS total_sales,
-        sum(payment_total) AS total_payments,
-        sum(invoice_total - payment_total) AS what_we_expect
-    FROM invoices
-    WHERE invoice_date > '2019-06-30';
 
 * Output
 ![output of aggregate functions using union](<Screenshot 2024-12-15 184025.png>)
