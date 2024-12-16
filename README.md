@@ -13,7 +13,7 @@ After creating the database, I was able to query the data to analyze it and crea
     ## Query
     ![input of aggregate functions using union](<Screenshot 2024-12-15 190937.png>)
     ## Output
-    ![output of aggregate functions using union](<Screenshot 2024-12-15 185959.png>)
+    ![aoutput of aggregate functions using union](<Screenshot 2024-12-15 185959.png>)
 
 
 ## Group By & Order By Clause
@@ -21,8 +21,8 @@ After creating the database, I was able to query the data to analyze it and crea
 * Create a report that summarizes the total payments  for each day as well as the payment method
 
     ## Query
-    ![input Group By & Order By Clause](<Screenshot 2024-12-15 191802-1.png>)
+    ![input Group By & Order By Clause](<Screenshot 2024-12-15 191802.png>)
     ## Output
-    ![output Group By & Order By Clause](<Screenshot 2024-12-15 191809-1.png>)
+    ![output Group By & Order By Clause](<Screenshot 2024-12-15 191809.png>)
 
 
