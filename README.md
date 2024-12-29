@@ -77,14 +77,26 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ## Output
     ![the having clause](images/image-7.png)
 
+## With Roll Up
+
+* Create a reprt that summarizes the total payment made for each payment method
+
+    ## Query
+    ![with rollup query](images/image-33.png)
+
+    ## Output
+    ![with roll up output](images/image-34.png)
+
+
 ## Sub queries
 
 * Create a report of all products that are more expensive than Lettuce(id = 3)
     ## Query
-    ![Sub query](images/image-8.png)
+    ![alt text](images/image-35.png)
 
     ## Output
-    ![Sub query](images/image-9.png)
+    ![alt text](images/image-36.png)
+   
 
 * In the sql_hr database: find emplyees who earn more than average 
 
