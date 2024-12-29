@@ -82,7 +82,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
 * Create a reprt that summarizes the total payment made for each payment method
 
     ## Query
-    ![with rollup query](images/image-33.png)
+    ![WITH ROLLUP](images/image-33.png)
 
     ## Output
     ![with roll up output](images/image-34.png)
@@ -98,13 +98,13 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ![alt text](images/image-36.png)
     
 
-* In the sql_hr database: find emplyees who earn more than average 
+* In the sql_hr database, find the employees who earn more than average 
 
     ## Query
-    ![sub query](images/image-10.png)
+    ![alt text](images/image-10.png)
 
     ## Output
-    ![sub query](images/image-11.png)
+    ![alt text](images/image-11.png)
 
 * Create a report of all the products that have never been ordered
 
