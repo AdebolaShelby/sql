@@ -42,12 +42,13 @@ After creating the database, I was able to query the data to analyze it and crea
     ![Inner join](images/image.png)
 
 ## Outer Join Multiple Tables
-* Create a report of all payments made by each client along with their payment method
+* Create a report of all orders placed by each client along with the order status
+
     ## Query
-    ![Outer join mutiple tables](images/image-2.png)
+    ![Outer join mutiple tables](images/image-29.png)
 
     ## Output
-    ![Outer join multiple tables](images/image-3.png)
+    ![Outer join multiple tables](images/image-30.png)
 
 ## The USING clause
 
