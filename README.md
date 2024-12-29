@@ -125,7 +125,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
 * Create a report of all customers who have ordered lettuce (id = 3) using subquery
 
     ## Query
-    ![Sub query](images/image-16.png)
+    ![alt text](images/image-16.png)
 
     ## Output
     ![Subquery](images/image-17.png)
