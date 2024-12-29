@@ -16,7 +16,23 @@ After creating the database, I was able to query the data to analyze it and crea
 * Create a report that summarizes total sales and payments for both halves of the year, including the remaining balance due.
 
     ## Query
-    ![input of aggregate functions using union](<Screenshot 2024-12-15 190937.png>)
+    USE sql_invoicing;
+    SELECT 
+        'First_half of the year' AS date_range,
+        sum(invoice_total) AS total_sales,
+        sum(payment_total) AS total_payments,
+        sum(invoice_total - payment_total) AS what_we_expect
+    FROM invoices
+    WHERE invoice_date < '2019-07-01'
+    UNION
+    SELECT 
+        'Second half of the year' AS date_range,
+        sum(invoice_total) AS total_sales,
+        sum(payment_total) AS total_payments,
+        sum(invoice_total - payment_total) AS what_we_expect
+    FROM invoices
+    WHERE invoice_date > '2019-06-30';
+
     ## Output
     ![aoutput of aggregate functions using union](<Screenshot 2024-12-15 185959.png>)
 
