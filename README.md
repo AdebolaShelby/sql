@@ -59,17 +59,17 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
 
 ## The USING clause
 
-* create a report 
+* create a report of all payments mmade by each client along with the payment date and payment type
 
     ## Query 
-    ![the using clause](images/image-4.png)
+    ![the using clause](images/image-31.png)
 
     ## Output
-    ![the using clause](images/image-5.png)
+    ![the using clause](images/image-32.png)
 
 ## Having
 
-* Create a report
+* Create a report of all customers located in Virginia who have spent more than $100
 
 ## Query 
 ![the having clause](images/image-6.png)
