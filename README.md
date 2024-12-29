@@ -36,100 +36,100 @@ After creating the database, I was able to query the data to analyze it and crea
 * Create a report of all the items that have been ordered along with the product name, unit price quatity, order_id, and product_id.
 
     ## Query
-    ![Inner join](image-1.png)
+    ![Inner join](images/image-1.png)
 
     ## Output
-    ![Inner join](image.png)
+    ![Inner join](images/image.png)
 
 ## Outer Join Multiple Tables
 * Create a report of all payments made by each client along with their payment method
     ## Query
-    ![Outer join mutiple tables](image-2.png)
+    ![Outer join mutiple tables](images/image-2.png)
 
     ## Output
-    ![Outer join multiple tables](image-3.png)
+    ![Outer join multiple tables](images/image-3.png)
 
 ## The USING clause
 
 * create a report 
 
     ## Query 
-    ![the using clause](image-4.png)
+    ![the using clause](images/image-4.png)
 
     ## Output
-    ![the using clause](image-5.png)
+    ![the using clause](images/image-5.png)
 
 ## Having
 
 * Create a report
 
 ## Query 
-![the having clause](image-6.png)
+![the having clause](images/image-6.png)
 
 ## Output
-![the having clause](image-7.png)
+![the having clause](images/image-7.png)
 
 
 ## Sub queries
 
 * Create a report of all products that are more expensive than Lettuce(id = 3)
     ## Query
-    ![Sub query](image-8.png)
+    ![Sub query](images/image-8.png)
 
     ## Output
-    ![Sub query](image-9.png)
+    ![Sub query](images/image-9.png)
 
 * In the sql_hr database: find emplyees who earn more than average 
 
     ## Query
-    ![sub query](image-10.png)
+    ![sub query](images/image-10.png)
 
     ## Output
-    ![sub query](image-11.png)
+    ![sub query](images/image-11.png)
 
 * Create a report of all the products that have never been ordered
 
  ## Query
- ![sub query](image-12.png)
+ ![sub query](images/image-12.png)
 
  ## Output
- ![sub query](image-13.png)
+ ![sub query](images/image-13.png)
 
 * Create a report of all the clients without invoices 
 
     ## Query
-    ![Sub query](image-14.png)
+    ![Sub query](images/image-14.png)
 
     ## Output
-    ![Sub query](image-15.png)
+    ![Sub query](images/image-15.png)
 
 * Create a report of all customers who have ordered lettuce (id = 3) using subquery
 
     ## Query
-    ![Sub query](image-16.png)
+    ![Sub query](images/image-16.png)
 
     ## Output
-    ![Subquery](image-17.png)
+    ![Subquery](images/image-17.png)
 
 
 * Create a report of invoices larger than all invoices of client 3 using the Max and ALL function 
 
     ## Query: Max
-    ![max query](image-18.png)
+    ![max query](images/image-18.png)
 
     ## Query: ALL
-    ![All query](image-19.png)
+    ![All query](images/image-19.png)
 
     ## Output
-    ![output](image-20.png)
+    ![output](images/image-20.png)
 
 * Create a report of all clients with at least two invoices using the ANY and IN operator
 
     ## Query
-    ![any and in operator](image-21.png)
+    ![any and in operator](images/image-21.png)
 
     ## Output
-    ![any and in operator](image-22.png)
+    ![any and in operator](images/image-22.png)
 
 
 ## Correlated Subqueries
@@ -137,26 +137,26 @@ After creating the database, I was able to query the data to analyze it and crea
 * Create a report of all employees whose salary is above the average in their office
 
     ## Query
-    ![correlated subquery](image-23.png)
+    ![correlated subquery](images/image-23.png)
 
     ## Output
-    ![correlated subquery](image-24.png)
+    ![correlated subquery](images/image-24.png)
 
 * Create a report of all the invoices that are larger than the client's average invoice amount
 
     ## Query
-    ![correlated subquery](image-25.png)
+    ![correlated subquery](images/image-25.png)
 
     ## Output
-    ![correlated subquery](image-26.png)
+    ![correlated subquery](images/image-26.png)
 
 * Create a report all the clients that have an invoice
 
     ## Query
-    ![sub query](image-27.png)
+    ![sub query](images/image-27.png)
 
     ## Output
-    ![sub query](image-28.png)
+    ![sub query](images/image-28.png)
 
 * Create a report of all the clients that have an invoice using the exist operator
 
