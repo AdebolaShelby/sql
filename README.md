@@ -16,25 +16,10 @@ After creating the database, I was able to query the data to analyze it and crea
 * Create a report that summarizes total sales and payments for both halves of the year, including the remaining balance due.
 
     ## Query
-    USE sql_invoicing;
-    SELECT 
-        'First_half of the year' AS date_range,
-        sum(invoice_total) AS total_sales,
-        sum(payment_total) AS total_payments,
-        sum(invoice_total - payment_total) AS what_we_expect
-    FROM invoices
-    WHERE invoice_date < '2019-07-01'
-    UNION
-    SELECT 
-        'Second half of the year' AS date_range,
-        sum(invoice_total) AS total_sales,
-        sum(payment_total) AS total_payments,
-        sum(invoice_total - payment_total) AS what_we_expect
-    FROM invoices
-    WHERE invoice_date > '2019-06-30';
-
+    ![input of aggregate functions using union](<images/Screenshot 2024-12-15 190937.png>)
+    
     ## Output
-    ![aoutput of aggregate functions using union](<Screenshot 2024-12-15 185959.png>)
+    ![aoutput of aggregate functions using union](<images/Screenshot 2024-12-15 185959.png>)
 
 
 ## Group By & Order By Clause
@@ -42,9 +27,9 @@ After creating the database, I was able to query the data to analyze it and crea
 * Create a report that summarizes the total payments  for each day as well as the payment method
 
     ## Query
-    ![input Group By & Order By Clause](<Screenshot 2024-12-15 191802.png>)
+    ![input Group By & Order By Clause](<images/Screenshot 2024-12-15 191802.png>)
     ## Output
-    ![output Group By & Order By Clause](<Screenshot 2024-12-15 191809.png>)
+    ![output Group By & Order By Clause](<images/Screenshot 2024-12-15 191809.png>)
 
 
 ## Inner Join
