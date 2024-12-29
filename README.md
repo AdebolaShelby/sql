@@ -96,7 +96,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
 
     ## Output
     ![alt text](images/image-36.png)
-   
+    
 
 * In the sql_hr database: find emplyees who earn more than average 
 
