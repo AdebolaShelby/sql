@@ -109,15 +109,15 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
 * Create a report of all the products that have never been ordered
 
  ## Query
- ![sub query](images/image-12.png)
+ ![alt text](images/image-12.png)
 
  ## Output
- ![sub query](images/image-13.png)
+ ![alt text](images/image-13.png)
 
-* Create a report of all the clients without invoices 
+* Create a report of all the clients without an invoice
 
     ## Query
-    ![Sub query](images/image-14.png)
+    ![alt text](images/image-14.png)
 
     ## Output
     ![Sub query](images/image-15.png)
