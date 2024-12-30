@@ -1,21 +1,7 @@
 # Creating a SQL database and executing queries to analyze data and generate reports.
 
-Using MySQL, I created a database for an e-commerce company that stores inventory data, invoicing data, as well as customer and orders data, along with employee information. After creating the database, I was able to query the data to analyze it and create reports. I utilized functions and clauses such as 
-    SELECT,
-    FROM,
-    INNER JOIN,
-    OUTER JOIN,
-    USING,
-    WHERE,
-    GROUP BY,
-    WITH ROLLUP,
-    HAVING,
-    ORDER BY,
-    EXISTS,
-    ANY,
-    IN, and
-    Subqueries.
-
+I created a MySQL database for an e-commerce company that stores various types of data, including inventory information, invoicing details, customer records, order data, and employee information. After establishing the database, I performed queries to analyze the data and generate reports. 
+I utilized several functions and clauses, such as SELECT, FROM, INNER JOIN, OUTER JOIN, USING, WHERE, GROUP BY, WITH ROLLUP, HAVING, ORDER BY, CASE, EXISTS, ANY, IN, and Subqueries.
 
 # Analysis
 ## Aggregate function using union
@@ -87,6 +73,14 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ## Output
     ![with roll up output](images/image-34.png)
 
+## The Case Operator
+
+* Generate a report of all customers and categorize them based on their points. Customers with more than 3000 points should be labeled as "Gold." Those with points ranging from 2000 to 3000 should be labeled as "Silver," and customers with fewer than 2000 points should be labeled as "Bronze."
+    ## Query
+    ![alt text](images/image-50.png)
+
+    ## Output
+    ![alt text](images/image-51.png)
 
 ## Subqueries
 
