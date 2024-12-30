@@ -91,11 +91,11 @@ ORDER BY date;
 
 USE sql_store;
 SELECT 
-p.name AS product_name,
-oi.order_id,
-oi.product_id,
-oi.quantity,
-oi.unit_price
+	p.name AS product_name,
+	oi.order_id,
+	oi.product_id,
+	oi.quantity,
+	oi.unit_price
 FROM order_items oi
 JOIN products p
 ON oi.product_id = p.product_id;
@@ -103,11 +103,11 @@ ON oi.product_id = p.product_id;
 -- join multiple tables --
 USE sql_invoicing;
 SELECT 
-c.client_id,
-c.name,
-p.date,
-p.amount,
-pm.name as payment_method
+	c.client_id,
+	c.name,
+	p.date,
+	p.amount,
+	pm.name as payment_method
 FROM clients c
 JOIN payments p
 	ON c.client_id = p.client_id
@@ -117,9 +117,9 @@ JOIN payment_methods pm
 -- outer join --
 USE sql_store;
 SELECT 
-p.product_id,
-p.name,
-oi.quantity
+	p.product_id,
+	p.name,
+	oi.quantity
 FROM products p
 LEFT JOIN order_items oi
 	ON p.product_id = oi.product_id;
@@ -128,12 +128,12 @@ LEFT JOIN order_items oi
 
 USE sql_store;
 SELECT 
-o.order_date,
-o.order_id,
-c.first_name,
-c.last_name,
-os.name AS status,
-s.name AS shipper
+	o.order_date,
+	o.order_id,
+	c.first_name,
+	c.last_name,
+	os.name AS status,
+	s.name AS shipper
 FROM orders o
 LEFT JOIN order_statuses os
 	ON o.status = os.order_status_id
@@ -167,26 +167,26 @@ FROM products p, shippers s;
 -- union --
 USE sql_store;
 SELECT 
-customer_id,
-first_name,
-points,
-'Bronze' AS type
+	customer_id,
+	first_name,
+	points,
+	'Bronze' AS type
 FROM customers
 WHERE points <= '2000'
 UNION
 SELECT 
-customer_id,
-first_name,
-points,
-'Silver' AS type
+	customer_id,
+	first_name,
+	points,
+	'Silver' AS type
 FROM customers
 WHERE points BETWEEN '2000' AND '3000'
 UNION
 SELECT 
-customer_id,
-first_name,
-points,
-'Gold' AS type
+	customer_id,
+	first_name,
+	points,
+	'Gold' AS type
 FROM customers
 WHERE points > '3000'
 ORDER BY first_name;
@@ -195,14 +195,14 @@ ORDER BY first_name;
 -- group by --
 USE sql_invoicing;
 SELECT 
-p.date,
-sum(amount) AS total_payments,
-pm.name
+	p.date,
+	sum(amount) AS total_payments,
+	pm.name
 FROM payments p
 JOIN payment_methods pm
 	ON p.payment_method = pm.payment_method_id
 GROUP BY date, pm.name
-order by total_payments desc;
+ORDER BY total_payments desc;
 
 -- having --
 
@@ -329,7 +329,11 @@ WHERE invoice_total > ALL
 -- find all clients with at least two invoices using any and in operator--
 
 USE sql_invoicing;
-SELECT c.client_id, c.name, c.city, c.state
+SELECT 
+	c.client_id, 
+	c.name, 
+	c.city, 
+	c.state
 FROM clients c
 WHERE c.client_id = ANY (
 	SELECT i.client_id
@@ -338,7 +342,11 @@ WHERE c.client_id = ANY (
 	HAVING count(*) >= 2);
 
 USE sql_invoicing;
-SELECT c.client_id, c.name, c.city, c.state
+SELECT 
+	c.client_id, 
+	c.name, 
+	c.city, 
+	c.state
 FROM clients c
 WHERE c.client_id IN (
 	SELECT i.client_id
@@ -360,8 +368,8 @@ WHERE salary > (
 -- Find all the invoices that are larger than the client's average invoice amount --
 USE sql_invoicing;
 SELECT
-client_id,
-invoice_total
+	client_id,
+	invoice_total
 FROM invoices i
 WHERE invoice_total > ANY (
 	SELECT 
