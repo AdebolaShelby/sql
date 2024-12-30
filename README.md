@@ -31,7 +31,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
 
 ## Group By & Order By Clause
 
-* Create a report that summarizes the total payments  for each day as well as the payment method
+* Create a report that summarizes the total payments  for each day as well as the payment method.
 
     ## Query
     ![input Group By & Order By Clause](<images/Screenshot 2024-12-15 191802.png>)
@@ -49,7 +49,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ![Inner join](images/image.png)
 
 ## Outer Join Multiple Tables
-* Create a report of all orders placed by each client along with the order status
+* Create a report of all orders placed by each client along with the order status.
 
     ## Query
     ![Outer join mutiple tables](images/image-29.png)
@@ -57,9 +57,9 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ## Output
     ![Outer join multiple tables](images/image-30.png)
 
-## The USING clause
+## The USING Clause
 
-* create a report of all payments mmade by each client along with the payment date and payment type
+* create a report of all payments mmade by each client along with the payment date and payment type.
 
     ## Query 
     ![the using clause](images/image-31.png)
@@ -67,9 +67,9 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ## Output
     ![the using clause](images/image-32.png)
 
-## Having
+## The Having Clause
 
-* Create a report of all customers located in Virginia who have spent more than $100
+* Create a report of all customers located in Virginia who have spent more than $100.
 
     ## Query 
     ![the having clause](images/image-6.png)
@@ -77,9 +77,9 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ## Output
     ![the having clause](images/image-7.png)
 
-## With Roll Up
+## The Roll Up Operator
 
-* Create a reprt that summarizes the total payment made for each payment method
+* Create a reprt that summarizes the total payment made for each payment method.
 
     ## Query
     ![WITH ROLLUP](images/image-33.png)
@@ -88,9 +88,9 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ![with roll up output](images/image-34.png)
 
 
-## Sub queries
+## Subqueries
 
-* Create a report of all products that are more expensive than Lettuce(id = 3)
+* Create a report of all products that are more expensive than Lettuce(id = 3).
     ## Query
     ![alt text](images/image-35.png)
 
@@ -98,7 +98,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ![alt text](images/image-36.png)
     
 
-* In the sql_hr database, find the employees who earn more than average 
+* In the sql_hr database, find the employees who earn more than average.
 
     ## Query
     ![alt text](images/image-10.png)
@@ -106,7 +106,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ## Output
     ![alt text](images/image-11.png)
 
-* Create a report of all the products that have never been ordered
+* Create a report of all the products that have never been ordered.
 
  ## Query
  ![alt text](images/image-12.png)
@@ -114,7 +114,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
  ## Output
  ![alt text](images/image-13.png)
 
-* Create a report of all the clients without an invoice
+* Create a report of all the clients without an invoice.
 
     ## Query
     ![alt text](images/image-14.png)
@@ -122,7 +122,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ## Output
     ![Sub query](images/image-15.png)
 
-* Create a report of all customers who have ordered lettuce (id = 3) using subquery
+* Create a report of all customers who have ordered lettuce (id = 3) using subquery.
 
     ## Query
     ![alt text](images/image-16.png)
@@ -131,7 +131,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ![Subquery](images/image-17.png)
 
 
-* Create a report of invoices larger than all invoices of client 3 using the Max and ALL function 
+* Create a report of invoices larger than all invoices of client 3 using the Max and ALL function.
 
     ## Query: Max
     ![max query](images/image-18.png)
@@ -142,7 +142,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ## Output
     ![output](images/image-20.png)
 
-* Create a report of all clients with at least two invoices using the ANY and IN operator
+* Create a report of all clients with at least two invoices using the ANY and IN operator.
 
     ## Query
     ![any and in operator](images/image-21.png)
@@ -153,7 +153,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
 
 ## Correlated Subqueries
 
-* Create a report of all employees whose salary is above the average in their office
+* Create a report of all employees whose salary is above the average in their office.
 
     ## Query
     ![correlated subquery](images/image-23.png)
@@ -161,7 +161,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ## Output
     ![correlated subquery](images/image-24.png)
 
-* Create a report of all the invoices that are larger than the client's average invoice amount
+* Create a report of all the invoices that are larger than the client's average invoice amount.
 
     ## Query
     ![correlated subquery](images/image-25.png)
@@ -169,7 +169,7 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ## Output
     ![correlated subquery](images/image-26.png)
 
-* Create a report all the clients that have an invoice
+* Create a report all the clients that have an invoice.
 
     ## Query
     ![sub query](images/image-27.png)
@@ -177,8 +177,52 @@ Using MySQL, I created a database for an e-commerce company that stores inventor
     ## Output
     ![sub query](images/image-28.png)
 
-* Create a report of all the clients that have an invoice using the exist operator
+* Create a report of all the clients that have an invoice using the exist operator.
 
+    ## Query
+    ![alt text](images/image-37.png)
 
+    ## Output
+    ![alt text](images/image-38.png)
 
-* Create a report of all the products that have never been ordered 
+* Create a report of the total sales, and avarege sale for each client.
+
+    ## Query
+    ![alt text](images/image-39.png)
+
+    ## Output
+    ![alt text](images/image-40.png)
+
+* Create a report for all orders placed in the current year.
+
+    ## Query
+    ![alt text](images/image-41.png)
+
+* Extract the date of the most recent order.
+ 
+    ## Query
+    ![alt text](images/image-42.png)
+
+    ## Output
+    ![alt text](images/image-43.png)
+
+* Create a report of all customers and their phone numbers, combine first name and last name in one column, if they don't have a phone number, assign 'unknown'.
+    ## Query
+    ![alt text](images/image-44.png)
+
+    ## Output
+    ![alt text](images/image-45.png)
+
+* Create a report of all orders. Label as active if the order was placed in the current year, if not label as archived
+    ## Query
+    ![alt text](images/image-46.png)
+
+    ## Output
+    ![alt text](images/image-47.png)
+
+* Create a report of all products along with the number of time they have been orders and the frequecy, if they have been oredered more than once, lalel frequency as 'many times'.
+    ## Query
+    ![alt text](images/image-48.png)
+
+    ## Output
+    ![alt text](images/image-49.png)
