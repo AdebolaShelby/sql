@@ -503,7 +503,6 @@ FROM customers
 ORDER BY points DESC;
 
 -- Creating Views --
-
 USE sql_invoicing;
 CREATE VIEW total_sales_by_client AS
 SELECT 
