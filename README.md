@@ -1,7 +1,7 @@
 # Creating a SQL database and executing queries to analyze data and generate reports.
 
 I created a MySQL database for an e-commerce company that stores various types of data, including inventory information, invoicing details, customer records, order data, and employee information. After establishing the database, I performed queries to analyze the data and generate reports. 
-I utilized several functions and clauses, such as SELECT, FROM, INNER JOIN, OUTER JOIN, USING, WHERE, GROUP BY, WITH ROLLUP, HAVING, ORDER BY, CASE, EXISTS, ANY, IN, and Subqueries.
+I utilized several functions and clauses, such as SELECT, FROM, INNER JOIN, OUTER JOIN, USING, WHERE, GROUP BY, WITH ROLLUP, HAVING, ORDER BY, CASE, EXISTS, ANY, IN, Subqueries, and Views.
 
 # Analysis
 ## Aggregate function using union
@@ -225,3 +225,13 @@ I utilized several functions and clauses, such as SELECT, FROM, INNER JOIN, OUTE
 
     ## Output
     ![alt text](images/image-49.png)
+
+## Creating Views
+
+* Create a view displaying each client and their total balance owed.
+
+    ## Query
+    ![alt text](images/image-52.png)
+
+    ## Output
+    ![alt text](images/image-53.png)

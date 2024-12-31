@@ -502,6 +502,32 @@ points,
 FROM customers
 ORDER BY points DESC;
 
+-- Creating Views --
+
+USE sql_invoicing;
+CREATE VIEW total_sales_by_client AS
+SELECT 
+c.client_id,
+c.name,
+sum(invoice_total)
+FROM invoices i
+	JOIN clients c
+    USING(client_id)
+GROUP BY c.client_id, c.name;
+
+USE sql_invoicing;
+CREATE VIEW client_balance AS
+SELECT
+	c.client_id,
+	c.name,
+	SUM(payment_total - invoice_total) AS balance
+FROM invoices i
+	JOIN clients c
+    USING(client_id)
+GROUP BY client_id;
+
+-- DROP View --
+DROP VIEW total_sales_by_client
 
 
 
